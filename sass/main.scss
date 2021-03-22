@@ -1,0 +1,70 @@
+@import './utils/variables';
+@import './utils/modern-normalize';
+@import './components/logo';
+@import './components/page-header';
+@import './components/hero';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/advantages';
+@import './components/services';
+@import './components/team';
+@import './components/clients-list';
+@import './components/portfolio-filter';
+@import './components/portfolio-cards';
+@import './components/page-footer';
+@import './components/footer-form';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.container {
+  width: 450px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 738px;
+  }
+
+  @media (min-width: $desctop) {
+    width: 1170px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
