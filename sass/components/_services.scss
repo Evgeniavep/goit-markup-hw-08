@@ -3,37 +3,38 @@
 
   @media (min-width: $desctop) {
     display: flex;
-    padding-bottom: 94px;
+  }
 
-    &--title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+  padding-bottom: 94px;
 
-    &--list {
-      display: flex;
-      flex-basis: calc(100% / 3);
-      justify-content: space-between;
-    }
+  &--title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-    &--thumb {
-      position: relative;
-    }
+  &--list {
+    display: flex;
+    flex-basis: calc(100% / 3);
+    justify-content: space-between;
+  }
 
-    &--overlay {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      font-size: 14px;
-      line-height: 1.17;
-      text-transform: uppercase;
-      text-align: center;
-      padding-top: 27px;
-      padding-bottom: 27px;
-      bottom: 0;
-      font-weight: 700;
-      color: $white-text;
-      background-color: $dark-back08;
-    }
+  &--thumb {
+    position: relative;
+  }
+
+  &--overlay {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    font-weight: 700;
+    color: $white-text;
+    background-color: $dark-back08;
   }
 }

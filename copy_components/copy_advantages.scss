@@ -4,7 +4,6 @@
   flex-basis: calc(100% / 4);
 }
 
-
 .advantages__list {
   display: inline-flex;
 }
@@ -12,7 +11,7 @@
 .advantages__list-item {
   width: 270px;
   flex-basis: calc(100% / 4);
-  
+
   &::before {
     display: block;
     content: '';
@@ -22,7 +21,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
   &--first,
   &--second,
   &--third {
@@ -33,19 +32,18 @@
   &--first::before {
     background-image: url('../Images/antenna.png');
   }
-  
+
   &--second::before {
     background-image: url('../Images/clock.png');
   }
-  
+
   &--third::before {
     background-image: url('../Images/diagram.png');
   }
-  
+
   &--last::before {
     background-image: url('../Images/astronaut.png');
   }
-
 }
 
 .advantages__list--text {
