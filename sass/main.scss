@@ -30,16 +30,16 @@ h2 {
 }
 
 .container {
-  min-width: 450px;
+  max-width: 450px;
   padding: 0 15px;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 738px;
+    max-width: 738px;
   }
 
   @media (min-width: $desctop) {
-    width: 1170px;
+    max-width: 1170px;
   }
 }
 

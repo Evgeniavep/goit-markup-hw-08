@@ -10,7 +10,7 @@
       rgba(47, 48, 58, 0.4)
     )
     url('/Images/hero-mobile.jpg');
-  max-width: 100%;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $tablet) {
-    max-width: 100%;
+    width: 100%;
     background-image: url('/Images/hero-tablet.jpg');
   }
 
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $desctop) {
-    max-width: 100%;
+    width: 100%;
     max-height: 600px;
     background-image: url('/Images/hero.jpg');
     padding-top: 200px;
