@@ -1,3 +1,9 @@
+.header__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .page-header__nav {
   display: none;
 
@@ -16,6 +22,11 @@
 
 .page-header__contacts {
   display: none;
+  margin-left: 84px;
+
+  @media (min-width: $desctop) {
+    margin-left: 305px;
+  }
 
   @media (min-width: $tablet) {
     display: block;
@@ -42,17 +53,19 @@
 
     @media (min-width: $tablet) {
       padding: 32px 0px 32px 0px;
-      margin-left: 84px;
     }
 
     @media (min-width: $desctop) {
       padding: 32px 0px 32px 0px;
-      margin-left: 50px;
     }
   }
 
   &--item:first-child {
-    margin-left: 0px;
+    margin-left: 88px;
+
+    @media (min-width: $desctop) {
+      margin-left: 93px;
+    }
   }
 }
 
@@ -85,15 +98,8 @@
   color: $blue-text;
 }
 
-.page-header__contacts {
-  margin-left: 84px;
-
-  @media (min-width: $desctop) {
-    margin-left: 305px;
-  }
-}
-
 .menu__button {
+  display: flex;
   border: none;
   width: 40px;
   height: 40px;
@@ -113,7 +119,7 @@
   font-size: 14px;
   line-height: 1.17;
   color: $grey-text;
-  margin-left: 50px;
+  // margin-left: 84px;
   display: flex;
   align-items: center;
   white-space: nowrap;

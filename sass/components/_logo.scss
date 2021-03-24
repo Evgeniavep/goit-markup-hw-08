@@ -1,5 +1,5 @@
 .logo {
-  display: inline-block;
+  display: flex;
   font-family: 'raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -24,5 +24,6 @@
 
   &--studio {
     color: $main-text;
+    
   }
 }
