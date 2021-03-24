@@ -9,18 +9,21 @@
 }
 
 .advantages__list {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $tablet) {
-    flex-wrap: wrap;
-    width: 50%;
+    display: flex;
   }
 
+  @media (min-width: $desctop) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .advantages__list-item {
-  //   flex-basis: calc(100% / 4);
+  // @media (min-width: $tablet) {
+  //   flex-basis: calc((100% - (2 * 30px)) / 2);
+  // }
 
   &::before {
     display: block;
@@ -34,10 +37,22 @@
 
   &--first,
   &--second,
-  &--third {
+  &--third,
+  &--last {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
     margin-bottom: 30px;
-    margin-right: 0px;
     width: 100%;
+
+    @media (min-width: $dtablet) {
+      margin-bottom: 0px;
+      flex-basis: calc((100% - (2 * 30px)) / 2);
+    }
+
+    @media (min-width: $desctop) {
+      margin-bottom: 0px;
+    }
   }
 
   &--first::before {
@@ -54,6 +69,13 @@
 
   &--last::before {
     background-image: url('../Images/astronaut.png');
+  }
+}
+
+.advantages__wrap {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

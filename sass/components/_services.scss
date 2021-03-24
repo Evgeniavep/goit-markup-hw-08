@@ -3,6 +3,7 @@
 
   @media (min-width: $desctop) {
     display: flex;
+    justify-content: space-between;
   }
 
   padding-bottom: 94px;
@@ -37,4 +38,8 @@
     color: $white-text;
     background-color: $dark-back08;
   }
+}
+
+.container__services--list:not(:last-child) {
+  margin-right: 30px;
 }
