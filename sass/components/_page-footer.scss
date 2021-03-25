@@ -1,0 +1,48 @@
+.page-footer {
+  background-color: $dark-back;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer__logo {
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+
+  &--web {
+    color: $blue-text;
+  }
+
+  &--studio {
+    color: $white-text;  
+  }
+}
+
+.page-footer__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 20px;
+
+  &--location {
+    color: $white-text;
+  }
+
+  &--contacts {
+    color: $white-op60;
+  }
+}
+
+.page-footer__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $grey-text;
+  margin-top: 9px;
+}
