@@ -1007,8 +1007,8 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: calc((100% - (2 * 15px)) / 2);
-        flex-basis: calc((100% - (2 * 15px)) / 2);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1020,6 +1020,12 @@ summary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .team__item {
+    width: 50%;
   }
 }
 
