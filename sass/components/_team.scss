@@ -15,18 +15,19 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: $desctop) {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
 
 .team__item {
   @media (min-width: $tablet) {
-    // flex-basis: calc((100% - (2 * 15px)) / 2);
-    width: 50%;
+    flex-basis: calc((100% - (2 * 15px)) / 2);
   }
 }
 
@@ -35,9 +36,14 @@
   margin-bottom: 30px;
   flex-grow: 1;
 
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $desctop) {
     width: 270px;
     height: 428px;
+    margin-bottom: 0px;
   }
 
   background-color: $white-text;
@@ -60,10 +66,6 @@
   padding-bottom: 16px;
 }
 
-.team__card-social {
-  padding-bottom: 30px;
-}
-
 .container__team--title {
   text-align: center;
   margin-bottom: 50px;
@@ -83,6 +85,10 @@
   margin-top: 10px;
 }
 
+.social-list {
+  padding-bottom: 24px;
+}
+
 .team__card-social--item {
   display: inline-flex;
   justify-content: center;
@@ -91,9 +97,25 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
+  @media (min-width: $desctop) {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    color: $icon-grey;
+    border-radius: 50%;
+    transition: all 250ms $animation-time;
+
+    &:hover,
+    &:focus {
+      background-color: $blue-text;
+      color: $white-text;
+    }
+  }
 }
 
 .team__card-social--link {
+  position: relative;
   width: 44px;
   height: 44px;
   color: $icon-grey;
@@ -111,8 +133,9 @@
   position: absolute;
   width: 20px;
   height: 20px;
+  top: 25%;
+  left: 25%;
   fill: currentColor;
-  padding-top: 10px;
 
   &:hover,
   &:focus {

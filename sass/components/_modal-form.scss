@@ -44,7 +44,12 @@
 
   &--icon {
     position: absolute;
-    left: -4%;
+    left: -9%;
+
+    @media (min-width: $desctop) {
+      left: -4%;
+    }
+
     top: 1px;
     box-sizing: border-box;
     align-items: center;

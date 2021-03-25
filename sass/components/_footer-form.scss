@@ -1,0 +1,135 @@
+.footer__join-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media (min-width: $desctop) {
+    margin: 0px 0px 0px 70px;
+    align-items: flex-start;
+  }
+
+  &--title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: $white-text;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.join-list__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desctop) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.join-list__link {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: $white-op10;
+  color: $white-text;
+  border-radius: 50%;
+  transition: background-color 250ms $animation-time;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-text;
+  }
+}
+
+.join-list__icon {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: color 250ms $animation-time;
+
+  &:hover,
+  &:focus {
+    color: currentColor;
+  }
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0px;
+  //   width: 450px;
+
+  @media (min-width: $desctop) {
+    margin-left: 93px;
+    align-items: flex-start;
+  }
+}
+
+.footer-subscribe__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: $white-text;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-subscribe__form {
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: $desctop) {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 570px;
+    align-items: baseline;
+  }
+}
+
+.footer-subscribe__form--button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px 28px 10px 29px;
+  color: $white-text;
+  background-color: $blue-text;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  @media (min-width: $desctop) {
+    display: inline-flex;
+    margin-left: 12px;
+  }
+}
+
+.footer-subscribe__form--icon {
+  fill: currentColor;
+  margin-left: 10px;
+  transform: translateY(10%);
+}
+
+.footer-subscribe__form--input {
+  padding: 15px 16px;
+  border-radius: 4px;
+  background: transparent;
+  border-color: $white-op30;
+  width: 100%;
+  color: $white-text;
+  outline: none;
+
+  &::placeholder {
+    color: $white-op60;
+  }
+}
