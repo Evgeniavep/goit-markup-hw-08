@@ -11,6 +11,9 @@
 .advantages__list {
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-bottom: -15px;
   }
 
   @media (min-width: $desctop) {
@@ -21,10 +24,6 @@
 }
 
 .advantages__list-item {
-  // @media (min-width: $tablet) {
-  //   flex-basis: calc((100% - (2 * 30px)) / 2);
-  // }
-
   &::before {
     display: block;
     content: '';
@@ -43,16 +42,21 @@
     flex-direction: column;
     max-width: 100%;
     margin-bottom: 30px;
+    margin-right: 15px;
     width: 100%;
 
-    @media (min-width: $dtablet) {
-      margin-bottom: 0px;
-      flex-basis: calc((100% - (2 * 30px)) / 2);
+    @media (min-width: $tablet) {
+      margin-bottom: 15px;
+      flex-basis: calc((100% - (2 * 15px)) / 2);
     }
 
     @media (min-width: $desctop) {
       margin-bottom: 0px;
     }
+  }
+
+  &--last {
+    margin-right: 0px;
   }
 
   &--first::before {

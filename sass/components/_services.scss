@@ -16,15 +16,15 @@
   &--list {
     display: flex;
     flex-basis: calc(100% / 3);
-    justify-content: space-between;
   }
 
-  &--thumb {
+  &--thumb:not(:last-child) {
     position: relative;
+    margin-right: 30px;
   }
 
   &--overlay {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     height: auto;
     font-size: 14px;
@@ -38,8 +38,4 @@
     color: $white-text;
     background-color: $dark-back08;
   }
-}
-
-.container__services--list:not(:last-child) {
-  margin-right: 30px;
 }
