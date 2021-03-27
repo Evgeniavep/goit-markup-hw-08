@@ -1,3 +1,117 @@
 .menu-container {
-  background-color: turquoise;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 15px 48px 40px;
+  background-color: $white-text;
+  z-index: 1000;
+
+  transform: translateX(100%);
+  transition: transform 250ms $animation-time;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 12px 8px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-toggle.js-close-menu {
+  align-self: flex-end;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: $blue-text;
+}
+
+.mobile-button__icon-open,
+.mobile-button__icon-close {
+  width: 40px;
+  height: 40px;
+  fill: inherit;
+}
+
+.mobile-menu__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: $main-text;
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+  color: $blue-text;
+}
+
+.mobile-menu__link.current {
+  color: $blue-text;
+}
+
+.mobile-menu__item {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__item:last-child {
+  margin-bottom: 302px;
+}
+
+.mobile-contacts__link--tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: $blue-text;
+}
+
+.mobile-contacts__link--mail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: $grey-text;
+}
+
+.mobile-contacts {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.mobile-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts:last-child {
+  margin-bottom: 64px;
+}
+
+.mobile-social {
+  display: flex;
+}
+
+.mobile-social__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: $blue-text;
+  border-right: 1px solid $main-text20;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.mobile-social__link.last{
+  border: none;
 }

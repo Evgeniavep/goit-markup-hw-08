@@ -80,7 +80,7 @@
   transition: all 250ms $animation-time;
 }
 
-.current::after {
+.page-header__nav--link.current::after {
   content: '';
   display: block;
   width: 100%;
@@ -96,22 +96,6 @@
 
 .page-header__nav--link.current {
   color: $blue-text;
-}
-
-.menu__button {
-  display: flex;
-  border: none;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-
-  &:hover {
-    color: $blue-text;
-  }
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
 }
 
 .page-header__contacts--link {
@@ -158,10 +142,4 @@
     fill: currentColor;
     margin-right: 10px;
   }
-}
-
-.page-header__menu-icon {
-  width: 40px;
-  height: 40px;
-  fill: inherit;
 }

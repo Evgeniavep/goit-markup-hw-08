@@ -4,7 +4,6 @@
 }
 
 .portfolio-cards__list {
-  
   display: block;
   align-items: center;
   padding-bottom: 60px;
@@ -18,46 +17,52 @@
   @media (min-width: $desctop) {
     padding-bottom: 94px;
   }
-  
+
   &--img {
     display: block;
     height: auto;
     position: relative;
     overflow: hidden;
     width: 100%;
+    object-fit: contain;
+
+    @media (min-width: $tablet) {
+      height: 294px;
+    }
+
+    @media (min-width: $desctop) {
+      height: 294px;
+    }
   }
 
   &--item {
-    max-width: 450px;
     border: 1px solid $grey-border-light;
     margin-left: 30px;
     margin-top: 30px;
     text-align: left;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 250ms $animation-time; 
+    transition: box-shadow 250ms $animation-time;
 
     @media (min-width: $tablet) {
       flex-basis: calc(100% / 2 - 30px);
-      max-width: 354px;
     }
 
     @media (min-width: $desctop) {
       flex-basis: calc(100% / 3 - 30px);
-      max-width: 370px;
     }
   }
 
   &--item:hover,
   &--item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16); 
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
   &--item:hover .portfolio-overlay,
   &--item:focus .portfolio-overlay {
     opacity: 1;
     transform: translateY(0);
-    transition: transform 250ms $animation-time; 
+    transition: transform 250ms $animation-time;
   }
 }
 
@@ -71,15 +76,17 @@
   text-align: left;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   transform: translateY(111%);
 
   @media (min-width: $tablet) {
     transform: translateY(140%);
+    padding: 49px 24px;
   }
 
   @media (min-width: $desctop) {
     transform: translateY(162%);
+    padding: 63px 24px;
   }
 }
 
@@ -96,7 +103,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    color: $main-text;  
+    color: $main-text;
   }
 
   &--name {
@@ -104,6 +111,6 @@
     font-size: 16px;
     line-height: 1.88;
     color: $grey-text;
-    margin-top: 4px; 
+    margin-top: 4px;
   }
 }
