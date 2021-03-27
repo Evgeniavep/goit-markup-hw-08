@@ -34,7 +34,6 @@
 .team__card-thumb {
   width: 100%;
   margin-bottom: 30px;
-  flex-grow: 1;
 
   @media (min-width: $tablet) {
     margin-bottom: 30px;
@@ -42,7 +41,6 @@
 
   @media (min-width: $desctop) {
     width: 270px;
-    height: 428px;
     margin-bottom: 0px;
   }
 

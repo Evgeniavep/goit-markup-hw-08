@@ -111,6 +111,8 @@
   @media (min-width: $desctop) {
     display: inline-flex;
     margin-left: 12px;
+    margin-top: 0px;
+    align-items: baseline;
   }
 }
 

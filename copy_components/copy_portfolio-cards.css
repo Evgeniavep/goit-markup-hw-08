@@ -31,7 +31,7 @@
   }
 
   &--item:hover .portfolio-overlay,
-  &--item:focus portfolio-overlay {
+  &--item:focus .portfolio-overlay {
     opacity: 1;
     transform: translateY(0);
     transition: transform 250ms $animation-time; 
