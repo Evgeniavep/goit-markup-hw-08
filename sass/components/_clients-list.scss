@@ -44,10 +44,13 @@
 }
 
 .clients__list-item {
-  flex-basis: calc(100% / 2 - 30px);
   margin-bottom: 30px;
-  margin-right: 23px;
-  max-width: 210px;
+
+  width: auto;
+
+  @media (max-width: 767px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
 
   @media (min-width: $tablet) {
     flex-basis: calc(100% / 3 - 30px);
@@ -56,6 +59,7 @@
 
   @media (min-width: $desctop) {
     max-width: 170px;
+    margin-right: 23px;
   }
 }
 

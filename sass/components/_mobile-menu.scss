@@ -2,8 +2,8 @@
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 15px 48px 40px;
   background-color: $white-text;
   z-index: 1000;
@@ -29,10 +29,6 @@
   @media (min-width: $tablet) {
     display: none;
   }
-}
-
-.menu-toggle.js-close-menu {
-  align-self: flex-end;
 }
 
 .menu-toggle:hover,
