@@ -20,6 +20,8 @@
   }
   
   &--img {
+    display: block;
+    height: auto;
     position: relative;
     overflow: hidden;
     width: 100%;
