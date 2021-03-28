@@ -1,3 +1,7 @@
+.header {
+  border-bottom: 1px solid $grey-border-light;
+}
+
 .header__section {
   display: flex;
   align-items: center;
@@ -87,7 +91,7 @@
   height: 4px;
   background-color: $blue-text;
   border-radius: 2px;
-  top: 67px;
+  top: 50px;
 
   position: absolute;
   opacity: 1;

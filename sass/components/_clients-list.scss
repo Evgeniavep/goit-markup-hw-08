@@ -1,6 +1,4 @@
 .container__clients {
-  box-sizing: border-box;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -22,44 +20,31 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  margin-right: -30px;
   margin-bottom: -30px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
-
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: -30px;
-  }
+  justify-content: space-between;
 
   @media (min-width: $desctop) {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
 
 .clients__list-item {
   margin-bottom: 30px;
 
-  width: auto;
-
   @media (max-width: 767px) {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 25px);
   }
 
   @media (min-width: $tablet) {
-    flex-basis: calc(100% / 3 - 30px);
-    max-width: 226px;
+    flex-basis: calc(100% / 3 - 60px);
   }
 
   @media (min-width: $desctop) {
-    max-width: 170px;
-    margin-right: 23px;
+    margin-bottom: 0px;
+    width: auto;
   }
 }
 
@@ -67,12 +52,20 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid $icon-grey;
   color: $icon-grey;
   border-radius: 4px;
   transition: all 250ms $animation-time;
+
+  @media (min-width: $tablet) {
+    max-width: 226px;
+  }
+
+  @media (min-width: $desctop) {
+    max-width: 170px;
+  }
 
   &:hover,
   &:focus {
@@ -83,37 +76,37 @@
 
 .clients__list-icon {
   &--a {
-    width: 44.27px;
+    // width: 44.27px;
     height: 49.23px;
     fill: currentColor;
   }
 
   &--b {
-    width: 40px;
+    // width: 40px;
     height: 52px;
     fill: currentColor;
   }
 
   &--c {
-    width: 41px;
+    // width: 41px;
     height: 42.6px;
     fill: currentColor;
   }
 
   &--d {
-    width: 79.66px;
+    // width: 79.66px;
     height: 42.02px;
     fill: currentColor;
   }
 
   &--e {
-    width: 59px;
+    // width: 59px;
     height: 47px;
     fill: currentColor;
   }
 
   &--f {
-    width: 88.48px;
+    // width: 88.48px;
     height: 45.44px;
     fill: currentColor;
   }

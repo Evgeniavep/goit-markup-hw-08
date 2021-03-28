@@ -17,10 +17,17 @@
 }
 
 .page-footer__nav {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 
   @media (min-width: $desctop) {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
   }
 }
 

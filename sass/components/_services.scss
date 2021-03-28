@@ -18,13 +18,16 @@
     flex-basis: calc(100% / 3);
   }
 
-  &--thumb:not(:last-child) {
+  &--thumb {
     position: relative;
+  }
+
+  &--thumb:not(:last-child) {
     margin-right: 30px;
   }
 
   &--overlay {
-    // position: absolute;
+    position: absolute;
     width: 100%;
     height: auto;
     font-size: 14px;
